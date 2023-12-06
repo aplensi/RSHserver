@@ -10,7 +10,7 @@
 	<link href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
 <link href="https://store.cloudflare.steamstatic.com/public/shared/css/shared_global.css?v=7sR4EhV3nKzm&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
 <link href="https://store.cloudflare.steamstatic.com/public/shared/css/buttons.css?v=hFJKQ6HV7IKT&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
-<link href="https://store.cloudflare.steamstatic.com/public/css/v6/store.css?v=5_pmjscCAXNy&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
+<link href="https://store.cloudflare.steamstatic.com/public/css/v6/store.css?v=UAQSASM_zkEN&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
 <link href="https://store.cloudflare.steamstatic.com/public/css/v6/browse.css?v=wWw5tW1y7nea&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
 <link href="https://store.cloudflare.steamstatic.com/public/css/v6/game.css?v=LhXfry1ZUNiz&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
 <link href="https://store.cloudflare.steamstatic.com/public/css/v6/itemstore.css?v=EOKpyHZAGN6p&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
 
 <script type="text/javascript" src="https://store.cloudflare.steamstatic.com/public/javascript/main.js?v=aVwmJL6U2Amu&amp;l=english&amp;_cdn=cloudflare"></script>
 
-<script type="text/javascript" src="https://store.cloudflare.steamstatic.com/public/javascript/dynamicstore.js?v=zT0Cl5vv5AfQ&amp;l=english&amp;_cdn=cloudflare"></script>
+<script type="text/javascript" src="https://store.cloudflare.steamstatic.com/public/javascript/dynamicstore.js?v=57KmB6NKWnRd&amp;l=english&amp;_cdn=cloudflare"></script>
 
 <script type="text/javascript">
 	var __PrototypePreserve=[];
@@ -97,7 +97,7 @@
 
 
 <div class="responsive_page_frame with_header">
-						<div class="responsive_page_menu_ctn mainmenu">
+						<div role="navigation" class="responsive_page_menu_ctn mainmenu" aria-label="Mobile Menu">
 				<div class="responsive_page_menu" id="responsive_page_menu">
 										<div class="mainmenu_contents">
 						<div class="mainmenu_contents_items">
@@ -134,7 +134,8 @@
 							<div class="minor_menu_items">
 																								<div class="menuitem change_language_action">
 									Change language								</div>
-																																	<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+																																	<a class="menuitem" href="https://store.steampowered.com/mobile" target="_blank" rel="noreferrer">Get the Steam Mobile App</a>
+																									<div class="menuitem" onclick="Responsive_RequestDesktopView();">
 										View desktop website									</div>
 															</div>
 						</div>
@@ -185,17 +186,17 @@
 	
 	<div class="responsive_page_content">
 
-		<div id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+		<div role="banner" id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
 	<div class="content">
 		<div class="logo">
 			<span id="logo_holder">
-									<a href="https://store.steampowered.com/?snr=1_itemstore_230__global-header">
-						<img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44">
+									<a href="https://store.steampowered.com/?snr=1_itemstore_230__global-header" aria-label="Link to the Steam Homepage">
+						<img src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44" alt="Link to the Steam Homepage">
 					</a>
 							</span>
 		</div>
 
-			<div class="supernav_container">
+			<div role="navigation" class="supernav_container" aria-label="Global Menu">
 	<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_itemstore_230__global-header" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
 		STORE	</a>
 	<div class="submenu_store" style="display: none;" data-submenuid="store">
@@ -233,7 +234,7 @@
 	</script>
 
 		<div id="global_actions">
-			<div id="global_action_menu">
+			<div role="navigation" id="global_action_menu" aria-label="Account Menu">
 									<a class="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_itemstore_230__global-header">
 						<div class="header_installsteam_btn_content">
 							Install Steam						</div>
@@ -281,7 +282,7 @@
 			</div>
 </div>
 <div id="responsive_store_nav_ctn"></div><div id="responsive_store_nav_overlay" style="display:none"><div id="responsive_store_nav_overlay_ctn"></div><div id="responsive_store_nav_overlay_bottom"></div></div><div id="responsive_store_search_overlay" style="display:none"></div><div data-cart-banner-spot="1"></div>
-		<div class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true}">
+		<div role="main" class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true}">
 
 				<script type="text/javascript">
 
@@ -343,8 +344,8 @@
 
 		<script type="text/javascript">
 	var g_AccountID = 0;
-	var g_sessionID = "0bd570de814e8d680b367422";
-	var g_ServerTime = 1701766594;
+	var g_sessionID = "a3c46ae2ddd9f54e5fbcf983";
+	var g_ServerTime = 1701872561;
 	var g_bUseNewCartAPI = false;
 
 	$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
@@ -575,7 +576,7 @@
 
     <div class="rule"></div>
 				<div id="footer_logo_steam"><img src="https://store.cloudflare.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Valve Software" border="0"></div>
-	
+
     <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel=""><img src="https://store.cloudflare.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve Software" border="0"></a></div>
     <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
         <div>© 2023 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.</div>
@@ -614,8 +615,8 @@
         &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="">Steam Distribution</a>
         &nbsp; | &nbsp;<a href="https://help.steampowered.com/en/?snr=1_44_44_">Support</a>
                         		&nbsp; | &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="">Gift Cards</a>
-		&nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.facebook.com%2FSteam" target="_blank" rel=" noopener"><img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
-		&nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel=""><img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+		&nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.facebook.com%2FSteam" target="_blank" rel=" noopener"><img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.png" alt="Facebook"> Steam</a>
+		&nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel=""><img src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.png" alt="X"> @steam</a>
             </div>
 
 </div>
