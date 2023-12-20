@@ -164,15 +164,17 @@ class Server
 				ifs.close();
 				ofstream ofs;
 				ofs.open("users/" + key + ".txt");
-				for (int i = 0; i << priceItems.size(); i++)
+				for (int i = 0; i < countOfItems; i++)
 				{
 					line += "-";
 				}
 				ofs << line;
+				cout << "\nРетурн";
 				return line;
 			}
 			getline(ifs, line);
 			ifs.close();
+			cout << "\nне Ретурн" << endl << line;
 			return line;
 		}
 
