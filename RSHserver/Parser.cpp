@@ -53,7 +53,7 @@ public:
 			countOfItems = nameItems.size();
 			countOfVouts();
 		}
-		else cout << "Все пропало";
+		else cout << "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 	}
 
 	void fsGetLine(ifstream &ifs, string &st, int count)

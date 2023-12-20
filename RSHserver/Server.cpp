@@ -159,6 +159,18 @@ class Server
 			string line;
 			ifstream ifs;
 			ifs.open("users/" + key + ".txt");
+			if (!ifs.is_open())
+			{
+				ifs.close();
+				ofstream ofs;
+				ofs.open("users/" + key + ".txt");
+				for (int i = 0; i << priceItems.size(); i++)
+				{
+					line += "-";
+				}
+				ofs << line;
+				return line;
+			}
 			getline(ifs, line);
 			ifs.close();
 			return line;
